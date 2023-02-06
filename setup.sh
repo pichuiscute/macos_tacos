@@ -4,15 +4,15 @@
 sudo mdutil -i off -a
 
 #Create new account
-sudo dscl . -create /Users/KrypticBit
-sudo dscl . -create /Users/KrypticBit UserShell /bin/bash
-sudo dscl . -create /Users/KrypticBit RealName "KrypticBit"
-sudo dscl . -create /Users/KrypticBit UniqueID 1001
-sudo dscl . -create /Users/KrypticBit PrimaryGroupID 80
-sudo dscl . -create /Users/KrypticBit NFSHomeDirectory /Users/vncuser
-sudo dscl . -passwd /Users/KrypticBit $1
-sudo dscl . -passwd /Users/KrypticBit $1
-sudo createhomedir -c -u akhil > /dev/null
+sudo dscl . -create /Users/Pichu
+sudo dscl . -create /Users/Pichu UserShell /bin/bash
+sudo dscl . -create /Users/Pichu RealName "Pichu"
+sudo dscl . -create /Users/Pichu UniqueID 1001
+sudo dscl . -create /Users/Pichu PrimaryGroupID 80
+sudo dscl . -create /Users/Pichu NFSHomeDirectory /Users/vncuser
+sudo dscl . -passwd /Users/Pichu $1
+sudo dscl . -passwd /Users/Pichu $1
+sudo createhomedir -c -u pikachu > /dev/null
 
 #Enable VNC
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -allowAccessFor -allUsers -privs -all
